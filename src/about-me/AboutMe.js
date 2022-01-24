@@ -6,9 +6,9 @@ const AboutMe = () => {
     <div className={s.mainBlock}>
       <div className={s.container}>
         <div className={s.text}>
-          <div>Привет!</div>
-          <h2>Меня зовут Эдуард</h2>
-          <div>Я front-end разработчик</div>
+          <span>Привет!</span>
+          <h3>Меня зовут Эдуард</h3>
+          <span>Я front-end разработчик</span>
         </div>
         <div className={s.photo}>
 

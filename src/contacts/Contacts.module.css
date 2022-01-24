@@ -1,0 +1,50 @@
+.mainBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d7b0b4;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid;
+    min-height: 60vh;
+    width: 80%;
+}
+
+.title {
+    height: 5%;
+}
+
+.contactsBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid;
+    height: 250px;
+    min-width: 40%;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    height: 50px;
+    width: 200px;
+    background-color: grey;
+}
+
+.input {
+    height: 50px;
+    min-width: 250px;
+}
+
+.text {
+    height: 60px;
+}

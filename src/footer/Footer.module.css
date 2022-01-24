@@ -1,0 +1,49 @@
+.mainBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 500px;
+    background-color: #ade3ad;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid;
+    width: 80%;
+    min-height: 400px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.imageBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid;
+    width: 50%;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    margin: 20px;
+}
+
+@media screen and (max-width: 1400px){
+    .imageBlock {
+        justify-content: center;
+    }
+}
