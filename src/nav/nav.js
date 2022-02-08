@@ -1,13 +1,13 @@
 import React from 'react';
-import s from './Nav.module.css'
+import s from './Nav.module.scss'
 
 const Nav = () => {
   return (
     <div className={s.nav}>
-      <span>Главная</span>
-      <span>Скилы</span>
-      <span>Работы</span>
-      <span>Контакты</span>
+      <span>Home</span>
+      <span>Skills</span>
+      <span>Projects</span>
+      <span>Contacts</span>
     </div>
   );
 };

@@ -6,12 +6,14 @@ const AboutMe = () => {
     <div className={s.mainBlock}>
       <div className={s.container}>
         <div className={s.text}>
-          <span>Привет!</span>
-          <h3>Меня зовут Эдуард</h3>
-          <span>Я front-end разработчик</span>
+          <span className={s.subtitle}>Welcome to my world</span>
+          <h1 className={s.title}>Hi, I'm <span className={s.name}>Eduard Mysan</span><br/>a Front-end Developer</h1>
+          <div>
+            <p className={s.description}>I am using React to write a SPA. There is not much experience yet, but I strive to learn all the intricacies of programming to increase my result</p>
+          </div>
         </div>
-        <div className={s.photo}>
 
+        <div className={s.photo}>
         </div>
       </div>
     </div>

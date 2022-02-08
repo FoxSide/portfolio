@@ -1,13 +1,12 @@
+@import '../common/styles/sass/variables';
+
 .header {
     display: flex;
     align-items: center;
     justify-content: end;
     height: 80px;
-    background-color: #67b4cb;
-}
-
-@media screen and (max-width: 720px){
-    .header {
+    background-color: $bg-color;
+    @media screen and (max-width: 720px){
         justify-content: center;
     }
 }
