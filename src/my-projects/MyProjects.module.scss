@@ -28,17 +28,19 @@
       }
     }
 
-    .skillsBlock {
+    .projectsBlock {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
+      justify-content: space-between;
       border: 1px solid;
       width: 100%;
       @media screen and (max-width: 1480px) {
         justify-content: center;
       }
     }
-
   }
 }
+
+
+
+

@@ -5,7 +5,6 @@ const Skill = (props) => {
   return (
     <div className={s.skill}>
       <div className={s.skillLogo}>
-
       </div>
       <div className={s.content}>
         <h4 className={s.title}>{props.title}</h4>
