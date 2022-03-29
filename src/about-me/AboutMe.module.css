@@ -54,11 +54,9 @@
     line-height: 75px;
     margin-bottom: 22px
 }
-
-.photo {
-    width: 500px;
+.photoMe {
     height: 500px;
-    background-color: darkgray;
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 866px){
@@ -74,8 +72,7 @@
 }
 
 @media screen and (max-width: 600px){
-    .photo {
-        width: 250px;
-        height: 250px;
+    .photoMe {
+        height: 400px;
     }
 }

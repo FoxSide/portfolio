@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './AboutMe.module.css'
+import photoMe from '../assets/image/photoMe.jpg'
 
 const AboutMe = () => {
   return (
@@ -12,9 +13,7 @@ const AboutMe = () => {
             <p className={s.description}>I am using React to write a SPA. There is not much experience yet, but I strive to learn all the intricacies of programming to increase my result</p>
           </div>
         </div>
-
-        <div className={s.photo}>
-        </div>
+          <img className={s.photoMe} src={photoMe} alt="photoMe"/>
       </div>
     </div>
   );

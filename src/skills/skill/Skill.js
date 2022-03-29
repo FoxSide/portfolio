@@ -3,13 +3,11 @@ import s from './Skill.module.scss';
 
 const Skill = (props) => {
   return (
-    <div className={s.skill}>
-      <div className={s.skillLogo}>
+    <div className={s.skillContainer}>
+      <div className={s.skill}>
+        <img className={s.logo} src={props.img} alt="logo"/>
       </div>
-      <div className={s.content}>
-        <h4 className={s.title}>{props.title}</h4>
-        <span className={s.description}>{props.description}</span>
-      </div>
+      <span className={s.titleSkill}>{props.title}</span>
     </div>
   );
 };

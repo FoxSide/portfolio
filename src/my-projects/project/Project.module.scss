@@ -11,6 +11,7 @@
     width: 290px;
   }
   .image {
+    cursor: pointer;
     margin: 20px;
     display: flex;
     align-items: center;
@@ -27,11 +28,12 @@
     }
 
     .showProject {
+      border-radius: 20px;
+      user-select: none;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid;
-      background-color: dimgray;
+      background-color: white;
       height: 50px;
       width: 40%;
     }
@@ -46,10 +48,11 @@
       color: $color-primary;
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
-      font-size: 12px;
+      font-size: 14px;
       letter-spacing: 1px;
       text-transform: uppercase;
       display: block;
+      user-select: none;
     }
 
     .description {

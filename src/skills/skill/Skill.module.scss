@@ -1,46 +1,39 @@
-.skill {
+@import '../../common/styles/sass/variables';
+
+.skillContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 350px;
-  background: linear-gradient(145deg, #1e2024, #23272b);
-  margin: 20px;
-  box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-  border-radius: 20px;
-
-  .skillLogo {
-    width: 80px;
-    height: 80px;
-    background-color: darkgray;
+  justify-content: center;
+  width: 250px;
+  height: 250px;
+  .skill {
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
+    &:hover {
+      transition: 0.3s;
+      width: 170px;
+      height: 170px;
+      .logo {
+        transition: 0.3s;
+        width: 120px;
+      }
+    }
+    .logo {
+      transition: 0.3s;
+      width: 100px;
+    }
   }
-
-  .content {
-    max-width: 300px;
-    text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
-
-    .title {
-      font-weight: 500;
-      font-size: 24px;
-      line-height: 32px;
-      margin-bottom: 20px;
-      color: #c4cfde;
-      font-family: 'Montserrat', sans-serif;
-    }
-
-    .description {
-      font-size: 16px;
-      line-height: 28px;
-      color: #c4cfde;
-      margin-bottom: 22px;
-    }
+  .titleSkill {
+    margin-top: 20px;
+    font-family: $font-style;
+    color: $color-heading;
+    font-size: 18px;
   }
 }
-
-
-
-
-
-
-
