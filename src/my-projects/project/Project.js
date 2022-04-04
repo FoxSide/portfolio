@@ -8,7 +8,7 @@ const Project = (props) => {
       </div>
       <div className={s.descriptionBlock}>
         <span className={s.titleProject}>{props.title}</span>
-        <span className={s.description}>{props.description}</span>
+        {/*<span className={s.description}>{props.description}</span>*/}
       </div>
     </div>
   );

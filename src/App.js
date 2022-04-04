@@ -11,12 +11,12 @@ import Footer from "./footer/Footer";
 function App() {
   return (
     <div className='App'>
-      <Header/>
+      {/*<Header/>*/}
       <AboutMe/>
       <Skills/>
       <MyProjects/>
       {/*<FindWork/>*/}
-      <Contacts/>
+      {/*<Contacts/>*/}
       <Footer/>
     </div>
   );

@@ -22,9 +22,9 @@ const MyProjects = () => {
       <div className={s.container}>
         <h2 className={s.title}>My Projects</h2>
         <div className={s.projectsBlock}>
-          <Project style={social} title={'Soscial network'} description={'Караткое описание'}/>
-          <Project style={todolist} title={'Todolist'} description={'Караткое описание'}/>
-          <Project style={counter} title={'Counter'} description={'Караткое описание'}/>
+          <Project style={social} title={'Soscial network'}/>
+          <Project style={todolist} title={'Todolist'}/>
+          <Project style={counter} title={'Counter'}/>
         </div>
       </div>
     </div>
