@@ -19,10 +19,16 @@ const MyProjects = () => {
   }
 
   const path = {
-    social: '',
-    todolist: 'https://foxside.github.io/todoV2/',
-    memCard: 'https://foxside.github.io/friday-project'
-
+    ghPages: {
+      social: 'https://foxside.github.io/socialnetwork-ts',
+      todolist: 'https://foxside.github.io/todoV2/',
+      memCard: 'https://foxside.github.io/friday-project'
+    },
+    ghRepository: {
+      social: 'https://github.com/FoxSide/socialnetwork-ts',
+      todolist: 'https://github.com/FoxSide/todoV2',
+      memCard: 'https://github.com/FoxSide/friday-project'
+    }
   }
 
   return (
@@ -31,9 +37,9 @@ const MyProjects = () => {
         <h2 className={s.title}>My Projects</h2>
         <div className={s.projectsBlock}>
           <Zoom>
-            <Project style={social} title={'Soscial network'}/>
-            <Project style={todolist} title={'Todolist'} path={path.todolist}/>
-            <Project style={memCard} title={'Memorization Cards'} path={path.memCard}/>
+            <Project style={todolist} title={'Todolist'} ghPages={path.ghPages.todolist} ghRepository={path.ghRepository.todolist}/>
+            <Project style={memCard} title={'Memorization Cards'} ghPages={path.ghPages.memCard} ghRepository={path.ghRepository.memCard}/>
+            <Project style={social} title={'Soscial network'} ghPages={path.ghPages.social} ghRepository={path.ghRepository.social}/>
           </Zoom>
         </div>
       </div>
