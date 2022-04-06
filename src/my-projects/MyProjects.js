@@ -3,7 +3,8 @@ import s from './MyProjects.module.scss'
 import Project from "./project/Project";
 import todoImage from '../assets/image/Todo.png'
 import socialImage from '../assets/image/SN.jpg'
-import counterImage from '../assets/image/counter.jpg'
+import memorizationCards from '../assets/image/MemorizationCards.jpg'
+import {Zoom} from "react-awesome-reveal";
 
 const MyProjects = () => {
 
@@ -13,8 +14,15 @@ const MyProjects = () => {
   const todolist = {
     backgroundImage: `url(${todoImage})`
   }
-  const counter = {
-    backgroundImage: `url(${counterImage})`
+  const memCard = {
+    backgroundImage: `url(${memorizationCards})`
+  }
+
+  const path = {
+    social: '',
+    todolist: 'https://foxside.github.io/todoV2/',
+    memCard: 'https://foxside.github.io/friday-project'
+
   }
 
   return (
@@ -22,9 +30,11 @@ const MyProjects = () => {
       <div className={s.container}>
         <h2 className={s.title}>My Projects</h2>
         <div className={s.projectsBlock}>
-          <Project style={social} title={'Soscial network'}/>
-          <Project style={todolist} title={'Todolist'}/>
-          <Project style={counter} title={'Counter'}/>
+          <Zoom>
+            <Project style={social} title={'Soscial network'}/>
+            <Project style={todolist} title={'Todolist'} path={path.todolist}/>
+            <Project style={memCard} title={'Memorization Cards'} path={path.memCard}/>
+          </Zoom>
         </div>
       </div>
     </div>

@@ -1,31 +1,33 @@
 @import './src/common/styles/sass/variables';
 
 .container {
-  border: 1px solid;
-  width: 400px;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  width: 290px;
   margin: 20px;
   border-radius: 20px;
   background: linear-gradient(145deg, #1e2024, #23272b);
   box-shadow: 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
-  @media screen and (max-width: 488px) {
-    width: 290px;
+  &:hover {
+    .image {
+      transition: 0.3s;
+      background-size: 400px;
+    }
   }
   .image {
+    transition: 0.3s;
     cursor: pointer;
     margin: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
     background-color: grey;
-    background-size: cover;
+    background-size: 300px;
     background-position: center;
     border-radius: 20px;
-    @media screen and (max-width: 488px) {
-      width: 250px;
-      height: 250px;
-    }
 
     .showProject {
       border-radius: 20px;

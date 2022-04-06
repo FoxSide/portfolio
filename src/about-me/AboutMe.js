@@ -2,8 +2,10 @@ import React from 'react';
 import s from './AboutMe.module.scss'
 import photoMe from '../assets/image/photoMe.jpg'
 import telegramImg from '../assets/image/telegram.png'
-import instImg from '../assets/image/instagram.png'
+import githubImg from '../assets/image/github.png'
 import linkedImg from '../assets/image/linkedIn.png'
+
+const aboutMeText = 'I am a person who has a strong passion for programming. I have experience building a SPA with React/Redux/TypeScript. In my free time, I expand my knowledge in the field of front-end development, devote time to Codewars, and also improve my knowledge of the English language.'
 
 const AboutMe = () => {
   return (
@@ -11,26 +13,28 @@ const AboutMe = () => {
       <div className={s.container}>
         <div className={s.text}>
           <span className={s.subtitle}>Welcome to my world</span>
-          <h1 className={s.title}>Hi, I'm <span className={s.name}>Eduard Mysan</span><br/>a Front-end Developer</h1>
+          <h1 className={s.title}>Hi, I'm <span className={s.name}>Eduard Mysan</span>
+            <br/>a Front-end Developer
+          </h1>
           <div>
-            <p className={s.description}>I am using React to write a SPA. There is not much experience yet, but I strive to learn all the intricacies of programming to increase my result</p>
+            <p className={s.description}>{aboutMeText}</p>
           </div>
           <div className={s.findContainer}>
             <span className={s.contacText}>contact with me</span>
             <div className={s.contactsGroup}>
-              <div className={s.contactContainer}>
+              <a href={'https://t.me/foxside'} target="_blank" className={s.contactContainer} rel="noreferrer">
                 <img src={telegramImg} alt="img"/>
-              </div>
-              <div className={s.contactContainer}>
-                <img src={instImg} alt="img"/>
-              </div>
-              <div className={s.contactContainer}>
+              </a>
+              <a href={'https://github.com/FoxSide'} target="_blank" className={s.contactContainer} rel="noreferrer">
+                <img src={githubImg} alt="img"/>
+              </a>
+              <a href={'https://www.linkedin.com/in/eduard-mysan/'} target="_blank" className={s.contactContainer} rel="noreferrer">
                 <img src={linkedImg} alt="img"/>
-              </div>
+              </a>
             </div>
           </div>
         </div>
-          <img className={s.photoMe} src={photoMe} alt="photoMe"/>
+        <img className={s.photoMe} src={photoMe} alt="photoMe"/>
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import reactImg from '../assets/image/science.png'
 import reduxtImg from '../assets/image/pngegg.png'
 import gitImg from '../assets/image/git.png'
 import muiImg from '../assets/image/mui.png'
+import {Zoom} from "react-awesome-reveal";
 
 const Skills = () => {
   return (
@@ -18,14 +19,16 @@ const Skills = () => {
           <h2 className={s.title}>My Skills</h2>
         </div>
         <div className={s.skillsBlock}>
-          <Skill title={'JavaScript'} img={jsImg}/>
-          <Skill title={'TypeScript'} img={tsImg}/>
-          <Skill title={'HTML'} img={htmlImg}/>
-          <Skill title={'CSS / SCSS'} img={sassImg}/>
-          <Skill title={'React'} img={reactImg}/>
-          <Skill title={'Redux'} img={reduxtImg}/>
-          <Skill title={'Git'} img={gitImg}/>
-          <Skill title={'Material-UI'} img={muiImg}/>
+          <Zoom>
+            <Skill title={'JavaScript'} img={jsImg}/>
+            <Skill title={'TypeScript'} img={tsImg}/>
+            <Skill title={'HTML'} img={htmlImg}/>
+            <Skill title={'CSS / SCSS'} img={sassImg}/>
+            <Skill title={'React'} img={reactImg}/>
+            <Skill title={'Redux'} img={reduxtImg}/>
+            <Skill title={'Git'} img={gitImg}/>
+            <Skill title={'Material-UI'} img={muiImg}/>
+          </Zoom>
         </div>
       </div>
     </div>
