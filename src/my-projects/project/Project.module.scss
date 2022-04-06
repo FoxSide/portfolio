@@ -12,7 +12,7 @@
   &:hover {
     .image {
       transition: 0.4s;
-      background-size: 400px;
+      background-size: 420px;
       text-decoration: none;
       color: white;
       &:before {
@@ -38,7 +38,7 @@
     width: 250px;
     height: 250px;
     background-color: grey;
-    background-size: 300px;
+    background-size: 350px;
     background-position: center;
     border-radius: 20px;
 
@@ -64,7 +64,7 @@
     }
 
     .titleProject {
-      color: $color-primary;
+      color: orange;
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
       font-size: 18px;
